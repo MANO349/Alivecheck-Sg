@@ -236,27 +236,27 @@ export default function Home() {
 
         {/* Main Button */}
         <button
-          onClick={() => writeCheckin("OK")}
-          className="w-full bg-[#0ECA89] text-white text-3xl py-8 rounded-3xl shadow-md hover:brightness-95 transition active:scale-[0.99]"
-        >
-          I’m OK
-        </button>
+  onClick={() => writeCheckin("OK")}
+  className="w-full bg-[#0ECA89] text-white text-3xl font-extrabold py-8 rounded-3xl shadow-md hover:brightness-95 transition active:scale-[0.99]"
+>
+  I’m OK
+</button>
 
         {/* Need help / Emergency */}
         <div className="mt-6 grid grid-cols-2 gap-4">
           <button
-            className="w-full bg-yellow-500 text-black text-xl py-4 rounded-2xl shadow-sm hover:brightness-95 transition"
-            onClick={() => writeCheckin("HELP")}
-          >
-            Need help
-          </button>
+  className="w-full bg-yellow-500 text-black text-xl font-extrabold py-4 rounded-2xl shadow-sm hover:brightness-95 transition"
+  onClick={() => writeCheckin("HELP")}
+>
+  Need Help?
+</button>
 
           <button
-            className="w-full bg-red-600 text-white text-xl py-4 rounded-2xl shadow-sm hover:bg-red-700 transition"
-            onClick={() => writeCheckin("EMERGENCY")}
-          >
-            Emergency
-          </button>
+  className="w-full bg-red-600 text-white text-xl font-extrabold py-4 rounded-2xl shadow-sm hover:bg-red-700 transition"
+  onClick={() => writeCheckin("EMERGENCY")}
+>
+  EMERGENCY
+</button>
         </div>
 
         {/* Last check-in */}
@@ -270,6 +270,14 @@ export default function Home() {
             {lastCheckIn}
           </p>
         </div>
+        <div className="mt-6">
+  <button
+    onClick={() => router.push("/invite")}
+    className="text-sm text-gray-700 font-semibold underline hover:text-gray-900 transition"
+  >
+    Generate Invite Code
+  </button>
+</div>
 
         <p className="mt-6 text-xs text-gray-500">
           Demo notifications use in-app toast + vibration.
