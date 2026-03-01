@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getSeniorMode, setSeniorMode } from "@/src/lib/uiPrefs";
+import { getSeniorMode, setSeniorMode } from "../uiPrefs";
 
 export default function SeniorModeToggle() {
   const [on, setOn] = useState(false);
